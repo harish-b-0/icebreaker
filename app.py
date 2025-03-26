@@ -194,8 +194,11 @@ def create_gradio_interface():
 if __name__ == "__main__":
     demo = create_gradio_interface()
     # Launch the Gradio interface
+    # You can customize these parameters:
+    # - share=True creates a public link you can share with others
+    # - server_name and server_port set where the app runs
     demo.launch(
         server_name="127.0.0.1",  
         server_port=5000,
-        share=True
+        share=True  # Set to False if you don't want to create a public link
     )

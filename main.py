@@ -93,7 +93,7 @@ def main():
     parser.add_argument('--url', type=str, help='LinkedIn profile URL')
     parser.add_argument('--api-key', type=str, help='ProxyCurl API key')
     parser.add_argument('--mock', action='store_true', help='Use mock data instead of API')
-    parser.add_argument('--model', type=str, help='LLM model to use (e.g., "meta-llama/llama-3-3-70b-instruct")')
+    parser.add_argument('--model', type=str, help='LLM model to use (e.g., "ibm/granite-3-2-8b-instruct")')
     
     args = parser.parse_args()
     
