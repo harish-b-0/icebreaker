@@ -7,3 +7,4 @@ llama-index-readers-web==0.2.2
 llama-hub==0.0.79.post1
 requests==2.32.2
 gradio==4.44.1
+pydantic==2.10.6
