@@ -11,7 +11,7 @@ import config
 logger = logging.getLogger(__name__)
 
 def generate_initial_facts(index: VectorStoreIndex) -> str:
-    """Generates interesting facts about the person's career or education.
+    """Generates interesting facts about the person\'s career or education.
     
     Args:
         index: VectorStoreIndex containing the LinkedIn profile data.
@@ -39,7 +39,7 @@ def generate_initial_facts(index: VectorStoreIndex) -> str:
         )
         
         # Execute the query
-        query = "Provide three interesting facts about this person's career or education."
+        query = "Provide three interesting facts about this person\'s career or education."
         response = query_engine.query(query)
         
         # Return the facts
@@ -49,14 +49,14 @@ def generate_initial_facts(index: VectorStoreIndex) -> str:
         return "Failed to generate initial facts."
 
 def answer_user_query(index: VectorStoreIndex, user_query: str) -> Any:
-    """Answers the user's question using the vector database and the LLM.
+    """Answers the user\'s question using the vector database and the LLM.
     
     Args:
         index: VectorStoreIndex containing the LinkedIn profile data.
-        user_query: The user's question.
+        user_query: The user\'s question.
         
     Returns:
-        Response object containing the answer to the user's question.
+        Response object containing the answer to the user\'s question.
     """
     try:
         # Create LLM for answering questions
